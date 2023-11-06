@@ -1,0 +1,15 @@
+# Additional dependencies on top of multilayer_simulator
+name: phd
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10.0 # Upgrade to 3.11 when Holoviews is compatible
+  - conda-forge::numpy=1.24.1=py310h4a8f9c9_0   # Specific build is pinned to ensure reproducible RNG behaviour
+  - dask # for opening lots of data files
+  - xyzpy # automated data generation in xarray structures
+  - hvplot # better plotting
+  - openpyxl # open excel files
+  - bottleneck # faster aggregation on numpy-backed xarray objects
+  # - pip
+  # - pip:
+  #   - -e .
