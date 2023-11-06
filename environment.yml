@@ -1,5 +1,5 @@
 # Additional dependencies on top of multilayer_simulator
-name: phd
+name: lopc_model
 channels:
   - conda-forge
 dependencies:
@@ -10,6 +10,3 @@ dependencies:
   - hvplot # better plotting
   - openpyxl # open excel files
   - bottleneck # faster aggregation on numpy-backed xarray objects
-  # - pip
-  # - pip:
-  #   - -e .
